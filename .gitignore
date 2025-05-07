@@ -46,4 +46,3 @@ yarn.lock
 # Optional backend cache/data
 backend/data/
 
-.env
