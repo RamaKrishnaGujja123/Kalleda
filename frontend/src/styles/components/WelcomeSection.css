@@ -1,0 +1,19 @@
+.welcome-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .welcome-section h2 {
+    font-size: 2.5rem;
+    color: #2d4a22;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+  }
+  

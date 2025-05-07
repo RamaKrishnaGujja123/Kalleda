@@ -1,0 +1,22 @@
+.village-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .village-highlight {
+    width: 280px;
+    background-color: #eef5ea;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .village-highlight:hover {
+    transform: translateY(-5px);
+  }
+  

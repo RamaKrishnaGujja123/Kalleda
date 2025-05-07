@@ -1,30 +1,76 @@
 .hero-banner {
-  background: url('/static/hero-bg.jpg') center/cover no-repeat;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url('/images/hero.jpeg') center/cover no-repeat;
+  animation: zoomInOutBg 20s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
-  padding: 100px 20px;
   font-family: 'Segoe UI', sans-serif;
-  animation: fadeIn 1.5s ease;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.hero-content {
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .hero-banner h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px #000;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  animation: zoomInText 1.2s ease forwards;
 }
 
 .hero-banner p {
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 2px #000;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  max-width: 700px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: zoomInText 1.4s ease forwards;
+  animation-delay: 0.3s;
 }
 
-@keyframes fadeIn {
-  from {
+/* Background slow zoom */
+@keyframes zoomInOutBg {
+  0%, 100% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 110%;
+  }
+}
+
+/* Text entrance zoom */
+@keyframes zoomInText {
+  0% {
+    transform: scale(0.8);
     opacity: 0;
-    transform: scale(0.95);
   }
-  to {
-    opacity: 1;
+  100% {
     transform: scale(1);
+    opacity: 1;
   }
+}
+
+/* Fade-in content */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-banner {
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-banner:hover {
+  transform: scale(1.02);
 }

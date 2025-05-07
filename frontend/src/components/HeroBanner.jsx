@@ -1,11 +1,13 @@
 import React from "react";
-import "../styles/components/HeroBanner.css"
+import "../styles/components/HeroBanner.css";
 
 const HeroBanner = () => {
   return (
     <div className="hero-banner">
-      <h1>Welcome to Kalleda Village</h1>
-      <p>Discover the beauty and culture of our village</p>
+      <div className="hero-content">
+        <h1>Welcome to Kalleda Village</h1>
+        <p>Discover the beauty, culture, and traditions of our cherished homeland.</p>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,31 @@
+.map-section {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    text-align: center;
+  }
+  
+  .map-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .map-iframe-container {
+    max-width: 800px;  /* Max width for the map */
+    margin: 0 auto;    /* Center the map container */
+  }
+  
+  .map-section iframe {
+    width: 100%;           /* Full width */
+    height: 400px;         /* Fixed height */
+    border: 0;
+    border-radius: 12px;   /* Rounded corners */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);  /* Light shadow */
+  }
+  
+  @media (max-width: 768px) {
+    .map-section iframe {
+      height: 300px;  /* Adjust height on smaller screens */
+    }
+  }
+  
