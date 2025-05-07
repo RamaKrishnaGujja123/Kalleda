@@ -1,0 +1,15 @@
+.about-page {
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  
+  .about-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-page p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
